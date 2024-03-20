@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 02</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <style>
+      section{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background-color: darkblue;
+      }
+      #outer{
+        width: 20%;
+        aspect-ratio: 1/1;
+        background-color: darkgrey;
+        border-radius: 100%;
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      div::before{
+        content: "";
+        border: 10px solid white;
+        border-top-color: red;
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      div:hover::before {
+        transform: rotate(360deg);
+        transition-duration: 3s;
+      }
+      #outer>h2{
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        color: white;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    </style>
+</head>
+<body>
+<section>
+  <div id="outer">
+    <h2>RWAD</h2>
+  </div>
+
+</section>
+</body>
+</html>
